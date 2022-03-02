@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  bomber:
+    #image: abagayev/stop-russia:latest
+    build: .
+    deploy:
+      mode: replicated
+      replicas: 5
+    volumes:
+      - ./resources.txt:/app/resources.txt
