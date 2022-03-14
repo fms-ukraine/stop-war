@@ -6,6 +6,6 @@ services:
     build: .
     deploy:
       mode: replicated
-      replicas: 5
+      replicas: 10
     volumes:
       - ./resources.txt:/app/resources.txt
